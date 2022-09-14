@@ -1,11 +1,12 @@
-export type imgProps ={ 
+
+export type imgProps = { 
     attributes: {
         url: string
         alternativeText: string
     }
 }
 
-export type carousel ={
+export type carousel = {
     id: string;
     attributes: {
         url: string
@@ -13,12 +14,7 @@ export type carousel ={
     }
 }
 
-export type logoHeaderProps = {
-        data: imgProps
-        }
-    
-
-export type buttonProps={
+export type buttonProps= {
     ButtonName: string
     ButtonName2: string
     ButtonName3: string
@@ -33,9 +29,30 @@ export type mainContent = {
     mainContentTxt: string
 }
 
+export type CardProps = {
+    id: string
+    attributes: {
+        nome: string
+        photo: {
+            data: {
+                id: String
+                attributes: {
+                    url: string
+                    alternativeText: string
+                }
+            }
+        }
+    }
+}
+export type CardsProps = {
+    data: CardProps[]
+}
 export type LandingPageProps = {
-    logoHeader: logoHeaderProps
     button: buttonProps
     mainContent: mainContent
 }
 
+
+export type CatalogoProps = {
+    cards:CardsProps
+}

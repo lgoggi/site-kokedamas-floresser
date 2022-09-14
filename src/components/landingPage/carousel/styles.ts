@@ -70,7 +70,7 @@ width: 100%;
 height: 100%;
 scroll-snap-align: none;
 animation-name: ${tonext}, ${snap};
-animation-duration: 3s;
+animation-duration: 20s;
 animation-timing-function: ease;
 animation-iteration-count: infinite;
 }
@@ -90,18 +90,41 @@ z-index: -1;
   }
 }
 `
+
 export const contentTxt = styled.div`
-font-family: glora;
+font-family: "fontspring";
 margin: 0 auto;
 display: flex;
 align-text: center;
 justify-self: center;
 width: 30rem;
-height: 15rem;
+height: fit-content;
 color: white;
-font-size: 2.3rem;
-font-weight: bold;
+font-size: 3rem;
 `
+export const button = styled.button`
+font-family: 'Glora Black';
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 5rem;
+font-size: 2.5rem;
+width: 20rem;
+height: 5rem;
+border: 3px solid black;
+cursor: pointer;
+box-shadow: 5px 5px 5px 0px #131833;
+&:active{
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
+background: linear-gradient(
+  to right bottom,
+  rgba(173, 170, 170, 1),
+  rgba(255, 255, 255, 0.8)
+);
+`
+
 export const wrapper = styled.div`
 background: linear-gradient(
   to right,
@@ -113,6 +136,8 @@ height: 50rem;
 padding: 5rem;
 display: flex;
 margin: 0 auto;
-flex-direction: row;
+align-items: center;
+flex-direction: column;
+flex-wrap: wrap;
  `
 
