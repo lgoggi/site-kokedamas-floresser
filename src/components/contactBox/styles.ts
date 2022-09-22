@@ -10,39 +10,37 @@ background-color: #4a5324;
 display: flex;
 flex-direction: column;
 margin: 0 auto;
-padding: 1%;
 border-radius: 10px;
 align-items: center;
-justify-content: center;
+justify-content: space-evenly;
 width: 100rem;
 height: 60rem;
 .instagram{
-    padding: 3% 1% 3% 3%;
-    width: 3rem;
-    height: 3rem;
+    color: white;
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 .whatsapp{
-    padding: 3% 1% 3% 3%;
-    width: 4rem;
-    height: 4rem;
+    
+    background-color: #00E676;
 }
 a{
+    font-family: 'Glora Black';
+    width: 30rem;
+    height: 7rem;
     text-decoration: none;
     font-size: 2rem;
-    font-style: italic;
     font-weight: 700;
     color: black;
 }
 `
 
 export const card = styled.div`
-    background: url('https://static.vecteezy.com/ti/vetor-gratis/p1/4750688-tropical-verde-folhas-em-aquarela-fundo-eps-gr%C3%A1tis-vetor.jpg');
+    background-color: #fff4d4;
     display: flex;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 7rem;
     width: 30rem;
     height: 7rem;
-    background-color: white;
     border-radius: 10px;
 `

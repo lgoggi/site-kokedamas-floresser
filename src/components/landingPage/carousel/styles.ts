@@ -45,12 +45,11 @@ const snap = keyframes`
 `
 
 export const wrapper_carousel = styled.div`
-position: relative;
 display: flex;
 text-align: center;
-margin: 0 auto;
-width: 50rem;
-height: 50rem;
+margin-left: -30rem;
+aspect-ratio: 16/9;
+width: 110rem;
 overflow: hidden;
 overflow-x: scroll;
 scroll-behavior: smooth;
@@ -66,23 +65,23 @@ export const carousel_snapper = styled.div`
 position: absolute;
 top: 0;
 left: 0;
-width: 100%;
-height: 100%;
+aspect-ratio: 16/9;
+width: 110rem;
 scroll-snap-align: none;
 animation-name: ${tonext}, ${snap};
-animation-duration: 20s;
+animation-duration: 2s;
 animation-timing-function: ease;
 animation-iteration-count: infinite;
-}
 `
 export const carousel_slide = styled.li`
 list-style: none;
-position: relative;
+opacity: 0.5;
 z-index: -1;
-}
+position: relative;
+aspect-ratio: 16/9;
+width: 110rem;
 .img{
-  width: 50rem;
-  height: 50rem;
+  
 }
 &:last-child{
   ${carousel_snapper}{
@@ -95,11 +94,10 @@ export const contentTxt = styled.div`
 font-family: "fontspring";
 margin: 0 auto;
 display: flex;
-align-text: center;
 justify-self: center;
 width: 30rem;
 height: fit-content;
-color: white;
+color: black;
 font-size: 3rem;
 `
 export const button = styled.button`
@@ -126,17 +124,14 @@ background: linear-gradient(
 `
 
 export const wrapper = styled.div`
-background: linear-gradient(
-  to right,
-  rgba(122, 109, 39, 0.8),
-  rgba(122, 109, 39, 0)
-);
-width: 100rem;
-height: 50rem;
-padding: 5rem;
+opacity: 0.9;
+background-color: rgb(169, 169, 169);
+aspect-ratio: 16/9;
+width: 110rem;
 display: flex;
 margin: 0 auto;
 align-items: center;
+justify-content: center;
 flex-direction: column;
 flex-wrap: wrap;
  `

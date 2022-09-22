@@ -2,6 +2,7 @@ import { Dispatch, SetStateAction} from 'react'
 import styled from "styled-components"
 
 const TopBar_wrapper = styled.div`
+margin-left: 20rem;
 width: 80rem;
 height: 5rem;
 background-color: rgba(1,1,1, 0.1);

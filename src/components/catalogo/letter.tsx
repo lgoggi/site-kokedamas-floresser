@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const Letter_catalogo = styled.div`
+    margin-left: 20rem;
     font-family: "Glora Regular";
     font-size: 5rem;
     font-style: italic;

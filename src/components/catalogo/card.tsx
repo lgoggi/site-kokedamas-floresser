@@ -3,7 +3,7 @@ import { CardProps } from "types/api"
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-background-color: #8B7623;
+background-color: #fff4d4;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -13,21 +13,25 @@ margin-left: 3rem;
 margin-bottom: 2rem;
 padding: 1%;
 border-radius: 4px;
-height: 30rem;
-width: 21.5rem;
+border: 1px solid grey;
+aspect-ratio: 2/3;
+height: 45rem;
+cursor: pointer;
 `
 
 export const Icon = styled.img`
-height: 30rem;
-width: 21.5rem;
+border-radius: 50%;
+aspect-ratio: 1;
 `
 
 export const Nome = styled.h1`
 font-size: 3rem;
 font-family: "fontspring";
+font-weight: 400;
 text-align: center;
 `
 
+//estilo provisório
 type Props = {
     content: CardProps
 }

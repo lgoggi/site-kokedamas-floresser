@@ -8,8 +8,8 @@ type Props = {
 
 const Carousel = ( mainContent: Props) =>
     <S.wrapper>
-        <S.contentTxt>A kokedama é uma técnica japonesa de cultivo de plantas em que a planta é cultivada em uma bola de terra coberta com musgo. Kokedamas são ótimas plantas para cultivar em pequenos espaços, como dentro de casa, e também são muito fáceis de cuidar</S.contentTxt> 
-        <Link href='/catalogo'><S.button>CATALOGO</S.button></Link>
+        {/* <S.contentTxt>A kokedama é uma técnica japonesa de cultivo de plantas em que a planta é cultivada em uma bola de terra coberta com musgo. Kokedamas são ótimas plantas para cultivar em pequenos espaços, como dentro de casa, e também são muito fáceis de cuidar</S.contentTxt> 
+        <Link href='/catalogo'><S.button>CATALOGO</S.button></Link> */}
         <S.wrapper_carousel>      
                 {mainContent.mainContent.mainContentImg.data.map((IMG) => {
                     return (

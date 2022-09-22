@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import GET_CATALOGO from "graphql/queries/getCatalogo";
 import { CatalogoProps } from "types/api";
 
-import * as S from './styles'
+
 import Logo from "components/header";
 import Letter from "components/catalogo/letter";
 import TopBar from "components/catalogo/topBar";
@@ -29,12 +29,10 @@ const index = ({cards}: CatalogoProps) => {
 
   return (
   <>
-    <Logo/>
-    <S.box>
+    <Logo />
       <Letter/>
       <TopBar setSearch={setSearch} ordem={ordem} setOrdem={setOrdem}/>
       <RightBox CardList={CardList} setCardList={setCardList} ordem={ordem}/>
-    </S.box>
   </>
   )
 }

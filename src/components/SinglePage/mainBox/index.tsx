@@ -1,4 +1,3 @@
-
 import * as S from './styles'
 
 type Props ={
@@ -19,9 +18,10 @@ type Props ={
 const MainBox = (content: Props) => 
 <>
     <S.mainbox_wrapper>
-        <S.nome>{content.content.nome}</S.nome>
         <S.img src={`http://localhost:1337${content.content.photo.data.attributes.url}`}/>
-        
+        <S.info_wrapper>
+            <S.nome>{content.content.nome}</S.nome>
+        </S.info_wrapper>
     </S.mainbox_wrapper>
 </>
 

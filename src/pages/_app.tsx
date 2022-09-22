@@ -10,6 +10,7 @@ function App ({ Component, pageProps}: AppProps) {
             <title> FloresSer </title>
             <link rel="icon" href="/icon2.png"></link>
         </Head>
+        <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
         <GlobalStyles />
         <Component {...pageProps} />
     </>

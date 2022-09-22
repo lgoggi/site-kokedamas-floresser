@@ -16,7 +16,6 @@ type Props = {
 }
 
 const item = (card: Props) => {
-console.log(card.card.data.attributes)
 return (
 <>
     <Header/>

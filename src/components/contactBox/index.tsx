@@ -1,16 +1,17 @@
+import { Icon } from '@iconify/react'
 import * as S from './styles'
 
 const ContactBox = () => 
-<S.wrapper> {/* MUDAR FONTE HORROROSA E FUNDO TENEBROSO */}
+<S.wrapper> 
     <a href='https://instagram.com/floresserkokedamas/'  target="_blank" rel="noreferrer">
-        <S.card>
-            <img className='instagram' src={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png'}/>
-        @FLORESSERKOKEDAMAS
+        <S.card className='instagram'>
+            <Icon icon='ant-design:instagram-filled' width={65}/>
+            FLORESSERKOKEDAMAS
         </S.card>
     </a>
-    <a className='card' href='https://instagram.com/floresserkokedamas/'  target="_blank" rel="noreferrer">
-        <S.card>
-            <img className='whatsapp' src={'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/150px-WhatsApp.svg.png'}/>
+    <a className='card' href='https://wa.me/5527988379378'  target="_blank" rel="noreferrer">
+        <S.card className='whatsapp'>
+            <Icon icon='dashicons:whatsapp' width={65}/>
             ENVIE UMA MENSAGEM
         </S.card>
     </a>
