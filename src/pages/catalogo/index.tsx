@@ -1,17 +1,25 @@
 import client from "graphql/client";
 import { GetStaticProps } from "next";
 import { useEffect, useState } from "react";
+import styled from "styled-components";
 
 import GET_CATALOGO from "graphql/queries/getCatalogo";
 import { CatalogoProps } from "types/api";
 
 
-import Logo from "components/header";
 import Letter from "components/catalogo/letter";
 import TopBar from "components/catalogo/topBar";
 import RightBox from "components/catalogo/rightBox";
+import Buttons from "components/landingPage/buttons";
 
 
+const Wrapper = styled.div`
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+`
 
 const index = ({cards}: CatalogoProps) => {
   const [ search, setSearch ] = useState('')
@@ -28,12 +36,14 @@ const index = ({cards}: CatalogoProps) => {
 
 
   return (
-  <>
-    <Logo />
+    <>
+      <Buttons/>
+    <Wrapper>
       <Letter/>
       <TopBar setSearch={setSearch} ordem={ordem} setOrdem={setOrdem}/>
       <RightBox CardList={CardList} setCardList={setCardList} ordem={ordem}/>
-  </>
+    </Wrapper>
+    </>
   )
 }
 

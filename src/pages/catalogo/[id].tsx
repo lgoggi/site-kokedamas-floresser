@@ -5,21 +5,22 @@ import GET_CATALOGO from "graphql/queries/getCatalogo";
 import GET_CARD from "graphql/queries/getCard";
 import { CardProps } from "types/api";
 
-import Header from "components/header";
-import MainBox from "components/SinglePage/mainBox";
+import MainBox from "components/SinglePage/MainBox";
+import Buttons from "components/landingPage/buttons";
+
+
 
 type Props = { 
     card: {
         data: CardProps
     }  
-
 }
 
 const item = (card: Props) => {
 return (
 <>
-    <Header/>
-    <MainBox content={card.card.data.attributes}/>
+    <Buttons/>
+    <MainBox content={card.card.data}/>
 </>
 )
 }
@@ -36,7 +37,7 @@ export const getStaticPaths : GetStaticPaths = async () => {
     })
 
     return {
-        paths: paths,
+        paths,
         fallback: false
     }
 }
@@ -44,7 +45,6 @@ export const getStaticPaths : GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async (context) => {
     const id = context.params?.id;
     const card = await client.request(GET_CARD(id))
-
 
     return {
         props: {...card}

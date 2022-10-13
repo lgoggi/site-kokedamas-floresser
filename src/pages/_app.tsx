@@ -8,9 +8,12 @@ function App ({ Component, pageProps}: AppProps) {
     <>
         <Head> 
             <title> FloresSer </title>
+            <link rel="preload" href="/fonts/Fontspring-DEMO-annuario-regular.woff" as="font" crossOrigin="" type="font/woff2" />
+            <link rel="preload" href="/fonts/Glora_black.woff" as="font" crossOrigin="" type="font/woff2" />
+            <link rel="preload" href="/fonts/Glora_Regular.woff" as="font" crossOrigin="" type="font/woff2" />
             <link rel="icon" href="/icon2.png"></link>
+            
         </Head>
-        <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
         <GlobalStyles />
         <Component {...pageProps} />
     </>

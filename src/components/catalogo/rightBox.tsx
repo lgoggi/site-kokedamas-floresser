@@ -3,21 +3,17 @@ import {CardProps} from 'types/api'
 import styled from "styled-components"
 import { Dispatch, SetStateAction } from 'react'
 
-export const RightBox_wrapper = styled.div`
-margin-left: 20rem;
+const RightBox_wrapper = styled.div`
 margin-top: 3rem;
 margin-bottom: 7.5rem;
 display: flex;
-flex: 0 0 auto;
-flex-direction: row;
 flex-wrap: wrap;
-overflow: auto;
-align-self: start;
 background-color: rgba(1,1,1, 0.1);
 border: 1px solid darkgrey;
 border-radius: 10px;
-width: 148rem;
+width: 80vw;
 `
+
 
 
 type Props = {
@@ -39,11 +35,13 @@ const RightBox = ({ CardList, setCardList, ordem }: Props) => {
             break;
     }
 
-    return (<RightBox_wrapper>
-        {CardList.map((planta) => {
-            return ( <Card content={planta} key={planta.id} />)
-        })}
-    </RightBox_wrapper>)
+    return (
+        <RightBox_wrapper>
+            {CardList.map((planta) => {
+                return ( <Card content={planta} key={planta.id} />)
+            })}
+        </RightBox_wrapper>
+    )
 }
 
 export default RightBox

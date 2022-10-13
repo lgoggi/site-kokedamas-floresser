@@ -4,12 +4,23 @@ import { Icon } from '@iconify/react';
 
 import styled from 'styled-components';
 
+const Wrapper = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+min-width: 100vw;
+height: 10vh;
+align-self: center;
+justify-self: center;
+background-color: #7a6d27;
+border-bottom-left-radius: 66px;
+`
+
 export const ButtonNav = styled.button`
 font-family: 'Glora Black';
 display: flex;
 align-items: center;
 justify-content: center;
-margin: 5rem;
 font-size: 2.5rem;
 width: 20rem;
 height: 4rem;
@@ -21,23 +32,21 @@ box-shadow: 3px 3px 3px 0px lightgrey;
   transform: translate(3px, 3px);
   box-shadow: none;
 }
+@media screen and (max-width: 710px){
+  width: 10rem;
+  .texto{
+    display: none;
+  }
+  }
 `
 
-const Wrapper = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100vw;
-height: 10rem;
-align-self: center;
-justify-self: center;
-`
 
 
 const Buttons = () =>
     <Wrapper>
-        <Link href="/"><ButtonNav><Icon icon="fa:home"/>home</ButtonNav></Link>
-        <Link href="/contato"><ButtonNav><Icon icon="material-symbols:perm-contact-calendar"/>contato</ButtonNav></Link>
+        <Link href="/"><ButtonNav><Icon className="icon" icon="fa:home"/><div className="texto">home</div></ButtonNav></Link>
+        <Link href="/catalogo"><ButtonNav><Icon className="icon" icon="carbon:catalog"/><div className="texto">catalogo</div></ButtonNav></Link>
+        <Link href="/contato"><ButtonNav><Icon className="icon" icon="material-symbols:perm-contact-calendar"/><div className="texto">contato</div></ButtonNav></Link>
     </Wrapper>
 
 export default Buttons

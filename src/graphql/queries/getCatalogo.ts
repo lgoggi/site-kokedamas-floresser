@@ -5,6 +5,7 @@ query GET_catalogo {
     id
     attributes{
       nome
+      tamanho
       photo{
         data{
           id
