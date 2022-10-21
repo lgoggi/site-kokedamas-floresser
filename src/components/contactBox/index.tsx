@@ -9,7 +9,7 @@ const ContactBox = () =>
             FLORESSERKOKEDAMAS
         </S.card>
     </a>
-    <a className='card' href='https://wa.me/5527988379378'  target="_blank" rel="noreferrer">
+    <a className='card' href='https://wa.me/'  target="_blank" rel="noreferrer">
         <S.card className='whatsapp'>
             <Icon icon='dashicons:whatsapp' width={65}/>
             ENVIE UMA MENSAGEM

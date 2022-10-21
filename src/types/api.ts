@@ -3,6 +3,7 @@ export type CardProps = {
     attributes: {
         nome: string
         tamanho: string
+        ambiente: string
         galeria: {
             data: {
                 id: String

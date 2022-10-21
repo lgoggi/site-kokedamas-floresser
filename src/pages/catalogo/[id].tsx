@@ -7,6 +7,7 @@ import { CardProps } from "types/api";
 
 import MainBox from "components/SinglePage/MainBox";
 import Buttons from "components/landingPage/buttons";
+import Info from "components/landingPage/InfoBox";
 
 
 
@@ -21,6 +22,7 @@ return (
 <>
     <Buttons/>
     <MainBox content={card.card.data}/>
+    <Info/>
 </>
 )
 }

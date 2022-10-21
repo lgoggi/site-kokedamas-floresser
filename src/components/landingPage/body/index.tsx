@@ -46,7 +46,7 @@ const Body = () =>
             <MainContent/>
         </Block2>
         <Block1>
-            <Image src={`https://floresser-api.herokuapp.com/uploads/FLORESSER_1_5948b1db48_88117e9cf8.png?updated_at=2022-10-12T23:47:30.443Z`}/>
+            <Image src={`https://res.cloudinary.com/dj0ocgmko/image/upload/v1666294947/ilustracao_landing_page_fbd5ca7e80.png?updated_at=2022-10-20T19:42:30.593Z`}/>
         </Block1>
     </Wrapper>
     </>

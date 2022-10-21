@@ -60,7 +60,7 @@ const MainContent = () =>
   <>
     <Wrapper>
     <Img_Wrapper>
-      <Img src={`https://floresser-api.herokuapp.com/uploads/Logotipofundotransp_Prancheta_5_3x_f7aea51abf_a2dd008e38.png?updated_at=2022-10-12T23:48:43.260Z`} alt={'logotipo Floresser escrito em cor creme com fundo verde musgo claro'}/>
+      <Img src={`https://res.cloudinary.com/dj0ocgmko/image/upload/v1666294960/Logotipo_Floresser_3d164559dd.png?updated_at=2022-10-20T19:42:42.894Z`} alt={'logotipo Floresser escrito em cor creme com fundo verde musgo claro'}/>
     </Img_Wrapper>
       <ContentTxt>A kokedama é uma técnica japonesa de cultivo de plantas em que a planta é cultivada em uma bola de terra coberta com musgo. Kokedamas são ótimas plantas para cultivar em pequenos espaços, como dentro de casa, e também são muito fáceis de cuidar</ContentTxt>
       <Link href='/catalogo'><Button>CATALOGO</Button></Link>

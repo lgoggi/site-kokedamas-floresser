@@ -6,6 +6,7 @@ query GET_Card{
           attributes{
             nome
             tamanho
+            ambiente
             galeria{
             data{
               id

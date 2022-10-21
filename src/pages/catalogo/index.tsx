@@ -11,6 +11,7 @@ import Letter from "components/catalogo/letter";
 import TopBar from "components/catalogo/topBar";
 import RightBox from "components/catalogo/rightBox";
 import Buttons from "components/landingPage/buttons";
+import Info from "components/landingPage/InfoBox";
 
 
 const Wrapper = styled.div`
@@ -43,6 +44,7 @@ const index = ({cards}: CatalogoProps) => {
       <TopBar setSearch={setSearch} ordem={ordem} setOrdem={setOrdem}/>
       <RightBox CardList={CardList} setCardList={setCardList} ordem={ordem}/>
     </Wrapper>
+    <Info/>
     </>
   )
 }

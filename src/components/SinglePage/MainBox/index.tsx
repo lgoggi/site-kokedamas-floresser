@@ -6,7 +6,6 @@ import { CardProps } from "types/api"
 
 
 const Mainbox_wrapper = styled.div`
-
     margin: 10rem auto;
     width: 120rem;
     max-width: 90vw;
@@ -137,12 +136,12 @@ const MainBox = (content: Props) =>{
     return (
         <Mainbox_wrapper>
         <ImageBox>
-            <MainImg src={`${process.env.NEXT_PUBLIC_HOST_URL}${content.content.attributes.galeria.data[MainImageIndex].attributes.url}`} 
+            <MainImg src={`${content.content.attributes.galeria.data[MainImageIndex].attributes.url}`} 
                     alt={content.content.attributes.galeria.data[MainImageIndex].attributes.alternativeText}/>
                 {
             content.content.attributes.galeria.data.map((element,index)=>{
                 return(
-                    <SideImg src={`${process.env.NEXT_PUBLIC_HOST_URL}${element.attributes.url}`} 
+                    <SideImg src={`${element.attributes.url}`} 
                     alt={element.attributes.alternativeText} onClick={()=> {mainImage(index)}} key={`${element.id}`}/>
                 )
             })}
@@ -150,9 +149,9 @@ const MainBox = (content: Props) =>{
         <Info_wrapper>
             <div className="texto">
                 <Nome>{content.content.attributes.nome}</Nome>
-                <Tamanho>{content.content.attributes.tamanho},<br></br> ambiente interno</Tamanho>
+                <Tamanho>{content.content.attributes.tamanho}, {content.content.attributes.ambiente}</Tamanho>
             </div>
-            <a className="contato" href='https://wa.me/5527988379378' target="_blank" rel="noreferrer">
+            <a className="contato" href='https://wa.me/' target="_blank" rel="noreferrer">
                 <Contato><Icon icon='dashicons:whatsapp' width={25}/>ENCOMENDAR</Contato>
             </a>
         </Info_wrapper>

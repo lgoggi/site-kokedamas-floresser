@@ -16,7 +16,7 @@ margin-bottom: 2rem;
 border-radius: 4px;
 border: 1px solid grey;
 width: 30rem;
-height: 45rem;
+height: 40rem;
 max-width: 30vw;
 max-height: 45vw;
 cursor: pointer;
@@ -43,10 +43,10 @@ type Props = {
 }
 
 const Card = (content: Props) => 
-    <Link href={`/catalogo/${content.content.id}`}>
+    <Link href={`/catalogo/${content?.content.id}`}>
 <Wrapper>
-        <Icon src={`${process.env.NEXT_PUBLIC_HOST_URL}${content.content.attributes.photo.data.attributes.url}`}/>
-    <Nome>{content.content.attributes.nome}</Nome>
+        <Icon src={`${content?.content.attributes.photo.data.attributes.url}`}/>
+    <Nome>{content?.content.attributes.nome}</Nome>
 </Wrapper>
     </Link>
 
