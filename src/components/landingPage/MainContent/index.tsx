@@ -18,7 +18,6 @@ const Button = styled.button`
  justify-content: center;
  align-items: center;
  font-size: 3.25rem;
- margin-top: 1rem;
  width: 25rem;
  height: 7.5rem;
  border: 3px solid black;
@@ -40,7 +39,7 @@ const Button = styled.button`
  max-width: 85vw;
  height: 30rem;
  color: black;
- font-size: 3.5rem;
+ font-size: 3.2rem;
  `
 const Img_Wrapper= styled.div`
 align-self: center;

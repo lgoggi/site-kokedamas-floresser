@@ -22,7 +22,7 @@ const Mainbox_wrapper = styled.div`
     }
 `
 const ImageBox = styled.div`
-    background-color: #e3cb7d;
+    background-color: transparent;
     border: 1px solid black;
     height: 60rem;
     width: 75rem;
@@ -41,7 +41,7 @@ const ImageBox = styled.div`
 const MainImg=styled.img`
     opacity: 100%;
     border: none;
-    border-right: 1px solid black;
+    border-right: 1px solid grey;
     width: 60rem;
     max-width: 80vw;
     max-height: 80vw;
@@ -95,7 +95,8 @@ const Info_wrapper = styled.div`
         width: 60rem;
         margin: 5rem auto;
         .contato{
-            margin: auto;
+            padding: 5px;
+            margin: auto 1rem;
             max-width: 30vw;
         }
         .texto{

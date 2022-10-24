@@ -22,7 +22,7 @@ const InfoBox=styled.div`
     border-radius: 10px;
     border: 5px solid #000042;
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     right: 25px;
     bottom: 25px;
     display: flex;
