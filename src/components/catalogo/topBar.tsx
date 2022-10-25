@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const TopBar_wrapper = styled.div`
 width: 80rem;
-max-width: 75vw;
+max-width: 80vw;
 height: 5rem;
 background-color: rgba(1,1,1, 0.1);
 border: 1px solid darkgrey;

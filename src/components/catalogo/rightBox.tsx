@@ -13,12 +13,11 @@ margin-bottom: 7.5rem;
 background-color: rgba(1,1,1, 0.1);
 border: 1px solid darkgrey;
 border-radius: 10px;
-width: 80vw;
+width: 85vw;
 `
 const Inner_wrapper = styled.div` // to do: improve wrap/aligment
 display: flex;
 flex-wrap: wrap;
-background-color: green;
 justify-content: space-evenly;
 
 `

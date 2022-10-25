@@ -15,7 +15,7 @@ border: 1px solid grey;
 width: 30rem;
 height: 40rem;
 max-width: 32.5vw;
-max-height: 45vw;
+max-height: 50vw;
 cursor: pointer;
 
 `
@@ -27,7 +27,15 @@ max-width: 32.5vw;
 border-bottom: 1px solid grey;
 `
 
-export const Nome = styled.h1`
+export const Nome = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+flex-shrink: 1;
+width: 30rem;
+max-width: 32.5vw;
+height: 10rem;
+max-height: 12.5vw;
 font-size: 3rem;
 font-family: "fontspring";
 font-weight: 400;

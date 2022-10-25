@@ -23,7 +23,7 @@ const Button = styled.button`
  border: 3px solid black;
  cursor: pointer;
  box-shadow: 5px 5px 5px 0px #131833;
- 
+ margin-top: 1rem;
  background: linear-gradient(
    to right bottom,
    rgba(173, 170, 170, 1),
@@ -36,10 +36,11 @@ const Button = styled.button`
  display: flex;
  justify-self: center;
  width: 60rem;
- max-width: 85vw;
- height: 30rem;
+ max-width: 100vw;
+ height: auto;
  color: black;
  font-size: 3.2rem;
+ background-color: green;
  `
 const Img_Wrapper= styled.div`
 align-self: center;
