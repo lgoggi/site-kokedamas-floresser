@@ -14,6 +14,9 @@ align-self: center;
 justify-self: center;
 background-color: #7a6d27;
 border-bottom-left-radius: 66px;
+@media screen and (max-width: 710px){
+  border-bottom-left-radius: 33px;
+}
 `
 
 export const ButtonNav = styled.button`

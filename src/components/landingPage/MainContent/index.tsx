@@ -40,7 +40,6 @@ const Button = styled.button`
  height: auto;
  color: black;
  font-size: 3.2rem;
- background-color: green;
  `
 const Img_Wrapper= styled.div`
 align-self: center;

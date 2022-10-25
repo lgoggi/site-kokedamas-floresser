@@ -110,11 +110,19 @@ const Nome = styled.div`
     font-family: 'Glora Regular';
     font-size: 4.5rem;
     margin-left: 1.5rem;
+    max-width: 40vw;
+    word-wrap: break-word;
+    @media screen and (max-width: 840px){
+        font-size: 3.25rem; 
+    }
 `
 const Tamanho = styled.div`
     font-family: "Glora Medium";
     font-size: 2.5rem;
     margin-left: 1.5rem;
+    @media screen and (max-width: 840px){
+        font-size: 1.85rem; 
+    }
 `
 
 const Contato = styled.div`
